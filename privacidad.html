@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — TuLuzBaja Publicador</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --paper: #F7F4EC; --paper-sunk: #EFEAdc; --ink: #211D17; --ink-soft: #5B5648; --ink-faint: #8B8575;
+    --rule: #DCD5C2; --rule-strong: #C7BEA5; --accent: #423876; --accent-soft: #E9E5F5; --moon: #C9A63E;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--paper); color: var(--ink); margin: 0;
+    font-family: "Public Sans", system-ui, sans-serif; font-size: 16px; line-height: 1.65;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 48px 24px 90px; }
+  code {
+    font-family: ui-monospace, monospace; font-size: .87em; background: var(--paper-sunk);
+    border: 1px solid var(--rule); border-radius: 4px; padding: .1em .4em;
+  }
+  .brand { display: flex; align-items: baseline; gap: 10px; margin-bottom: 6px; }
+  .moon { font-size: 20px; color: var(--moon); }
+  .brand-name { font-family: "Newsreader", Georgia, serif; font-size: 15px; font-weight: 500; color: var(--ink-soft); }
+  h1 {
+    font-family: "Newsreader", Georgia, serif; font-size: clamp(28px, 5.5vw, 38px);
+    font-weight: 600; line-height: 1.16; margin: 4px 0 8px;
+  }
+  .updated { font-size: 13px; color: var(--ink-faint); margin: 0 0 30px; }
+  h2 { font-family: "Newsreader", Georgia, serif; font-size: 19px; font-weight: 600; margin: 30px 0 10px; }
+  h2:first-of-type { margin-top: 0; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 7px; }
+  li::marker { color: var(--accent); }
+  a { color: var(--accent); }
+  .scope-card {
+    background: var(--paper-sunk); border: 1px solid var(--rule); border-radius: 9px;
+    padding: 16px 18px; margin: 18px 0 20px; display: flex; flex-direction: column; gap: 10px;
+  }
+  .scope-row { display: grid; grid-template-columns: 130px 1fr; gap: 4px 14px; font-size: 14px; align-items: baseline; }
+  .scope-row dt { font-family: ui-monospace, monospace; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-faint); }
+  .scope-row dd { margin: 0; }
+  .contact {
+    background: var(--accent-soft); border: 1px solid var(--rule-strong); border-radius: 9px;
+    padding: 16px 18px; margin-top: 26px; font-size: 14.5px;
+  }
+  .foot { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--rule); font-size: 12.5px; color: var(--ink-faint); }
+  @media (max-width: 540px) {
+    .scope-row { grid-template-columns: 1fr; gap: 2px; }
+    .scope-row dt { margin-top: 6px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand"><span class="moon">🌙</span><span class="brand-name">Tu Luz Baja</span></div>
+  <h1>Política de privacidad</h1>
+  <p class="updated">Vigente desde el 5 de septiembre de 2026.</p>
+
+  <h2>Qué datos toca</h2>
+  <p>Solo los de la propia cuenta conectada — la del canal @tuluzbaja — y nada de ninguna otra persona:</p>
+
+  <div class="scope-card">
+    <div class="scope-row">
+      <dt>Perfil básico</dt>
+      <dd>Identificador, nombre visible y foto de perfil de la cuenta conectada — lo mínimo para confirmar que la API está hablando con la cuenta correcta.</dd>
+    </div>
+    <div class="scope-row">
+      <dt>Vídeo</dt>
+      <dd>El archivo, título, descripción y etiquetas que el operador del canal aporta para cada publicación.</dd>
+    </div>
+  </div>
+
+  <h2>Dónde vive ese dato</h2>
+  <p>
+    El token de autorización se guarda cifrado por permisos de sistema, en el ordenador
+    del propio operador — nunca en un servidor de terceros ni en una nube compartida.
+    No sale de ahí salvo para hablar directamente con la API oficial de cada plataforma.
+  </p>
+
+  <h2>Qué no se hace con los datos</h2>
+  <ul>
+    <li>No se usan con fines publicitarios ni de perfilado.</li>
+    <li>No se venden ni se comparten con ningún tercero.</li>
+    <li>No se conservan más allá de lo necesario para completar cada publicación.</li>
+  </ul>
+
+  <h2>Revocar el acceso</h2>
+  <p>
+    El operador puede retirar el permiso en cualquier momento desde la configuración de
+    desarrollador de cada plataforma. Al revocarlo, el token guardado localmente deja de
+    funcionar y se borra.
+  </p>
+
+  <div class="contact">
+    <strong>Contacto:</strong> a través de las cuentas oficiales del canal —
+    <code>@tuluzbaja</code> en Instagram, TikTok, YouTube o Facebook.
+  </div>
+
+  <p style="margin-top:26px"><a href="terminos.html">← Ver los términos de servicio</a></p>
+
+  <p class="foot">
+    Página legal de la app de desarrollador <code>tuluzbaja-publicador</code>, registrada
+    para gestionar en exclusiva las cuentas propias del canal @tuluzbaja.
+  </p>
+</div>
+</body>
+</html>
